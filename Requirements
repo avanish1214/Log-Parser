@@ -1,0 +1,18 @@
+Requirements:
+
+Pyhon Libraries:	
+	-‘re’
+	-‘csv’
+	-‘datetime’
+	-‘json’
+	-‘argparse’
+	-‘serial’
+	-‘time’
+	-‘Pyserial’
+
+Hardware:
+ 	‘ESP32 S3’
+
+Input files:
+	‘Current file’
+	‘log file’
