@@ -1,0 +1,338 @@
+[01/01/70 00:00:30.085][WRN][max]: max1720x already initialised
+[01/01/70 00:00:30.135][ERR][dePM]: readBatteryParams: 250 Failed to communicate with Fuel gauge
+[01/01/70 00:00:30.136][INF][main]: In app_main, setting up the application
+[01/01/70 00:00:30.140][INF][main]: Creating Event Queue!
+[01/01/70 00:00:30.145][INF][main]: Returned from app_main()
+[01/01/70 00:00:30.150][INF][hsmS]: topHndlr: Event (INITIAL_TRANSITION_EVT)
+[01/01/70 00:00:30.158][INF][hsm]: t: top -> startUpConfig
+[01/01/70 00:00:30.162][INF][pwr]: power_on(POWER_BLE)
+[01/01/70 00:00:30.168][INF][uart]: queue free spaces: 20
+[01/01/70 00:00:30.174][INF][hsm]: t: top [(e:EVT_STARTUP_CONFIG=>)startUpConfig -> startUpConfig]
+[01/01/70 00:00:30.850][INF][strt]: Received Interrupt from BLE
+[01/01/70 00:00:30.851][INF][ble]: Uart is already Open
+[01/01/70 00:00:30.852][INF][ble]: BL654 IRQ, send start link
+[01/01/70 00:00:30.856][INF][ble]: sendBleData Tx link Inactive - Interrupting the BL654
+[01/01/70 00:00:30.864][INF][ble]: Uart is already Open
+[01/01/70 00:00:30.869][INF][hsm]: t: top [(e:EVT_BT_INTR=>)startUpConfig -> startUpConfig]
+[01/01/70 00:00:30.910][INF][ble]: BLE advertisement has started
+[01/01/70 00:00:30.911][INF][hsm]: t: top [(e:EVT_BT_ADVERTISING_STARTED=>)startUpConfig -> startUpConfig]
+[01/01/70 00:00:31.910][INF][ble]: Start link received, Tx link Active
+[01/01/70 00:00:31.960][INF][ble]: BLE Script version: BLE_V_3_7
+[01/01/70 00:00:31.962][INF][hsm]: t: top [(e:EVT_BT_VERSION_READ=>)startUpConfig -> startUpConfig]
+[01/01/70 00:00:32.020][INF][ble]: Serial no. in BT module: VM4P-00006
+[01/01/70 00:00:32.022][INF][hsm]: t: top [(e:EVT_BT_SERIAL_NO_READ=>)startUpConfig -> startUpConfig]
+[01/01/70 00:00:32.080][INF][ble]: BLE MAC Addr: C2429180F7C7
+[01/01/70 00:00:32.082][INF][strt]: device BLE MAC Addr: C2429180F7C7
+[01/01/70 00:00:32.083][INF][hsm]: t: top [(e:EVT_BT_MAC_ADDR_READ=>)startUpConfig -> startUpConfig]
+[01/01/70 00:00:34.030][INF][ble]: UART idle timeout, Tx link inactive
+[01/01/70 00:00:34.031][INF][ble]: Waiting for Rx link to go inactive
+[01/01/70 00:00:35.080][INF][ble]: End link received, Rx link inactive
+[01/01/70 00:00:35.082][INF][hsm]: t: top [(e:EVT_BT_DONE=>)startUpConfig -> startUpConfig]
+[01/01/70 00:00:35.100][INF][pwr]: power_off(POWER_BLE)
+[01/01/70 00:00:35.102][INF][hsm]: t: top [(e:EVT_STARTUP_CONFIG_DONE=>)startUpConfig -> startUpConfig]
+[01/01/70 00:00:35.161][INF][Cnfg]: Removed config successfully
+[01/01/70 00:00:35.771][INF][log]: createCompressedLogFile: Output Compressed Logs file name: /data/cmprssdlogs/35, current time 35
+[01/01/70 00:00:35.933][INF][comp]: compressionHelper: 5813 bytes of input compressed to 2698 bytes
+[01/01/70 00:00:35.961][INF][tmr]: start WIFI_ON
+[01/01/70 00:00:35.962][INF][nwTr]: Starting Wifi Connect
+[01/01/70 00:00:35.964][INF][hsm]: t: top [(e:EVT_ENTER_NWTRANSFER=>)startUpConfig -> connecting]
+[01/01/70 00:00:36.066][INF][wifH]: Initialized WiFI
+[01/01/70 00:00:36.124][INF][wifH]: Connected to AP
+[01/01/70 00:00:37.117][INF][esp_]: sta ip: 192.168.69.212, mask: 255.255.255.0, gw: 192.168.69.2
+[01/01/70 00:00:37.119][INF][wifH]: connected to AP
+[01/01/70 00:00:37.120][INF][tmr]: end WIFI_ON
+[01/01/70 00:00:37.125][INF][tmr]: start TIME_SYNC
+[01/01/70 00:00:37.129][INF][nwTr]: Starting Time Sync
+[01/01/70 00:00:37.134][INF][hsm]: t: networkTransfer [(e:EVT_WIFI_CONNECTED=>)connecting -> syncTime]
+[19/07/24 06:59:44.267][INF][nwTr]: Updated current TS: 1721372384
+[19/07/24 06:59:44.268][INF][tmr]: end TIME_SYNC
+[19/07/24 06:59:44.269][INF][tmr]: start AWS_CONNECT
+[19/07/24 06:59:44.272][INF][nwTr]: Starting AWS
+[19/07/24 06:59:44.277][INF][hsm]: t: networkTransfer [(e:EVT_TIME_SYNCED=>)syncTime -> startAWS]
+[19/07/24 06:59:48.059][WRN][esp-]: Failed to open new connection in specified timeout
+[19/07/24 06:59:48.065][WRN][core]: Connection to the broker failed. Retrying connection after 281 ms backoff.
+[19/07/24 06:59:51.749][WRN][esp-]: Failed to open new connection in specified timeout
+[19/07/24 06:59:51.754][WRN][core]: Connection to the broker failed. Retrying connection after 690 ms backoff.
+[19/07/24 06:59:57.170][INF][tmr]: end AWS_CONNECT
+[19/07/24 06:59:57.171][INF][tmr]: start OTA
+[19/07/24 06:59:57.172][INF][hsm]: t: networkTransfer [(e:EVT_AWS_CONNECT_DONE=>)startAWS -> fwDownload]
+[19/07/24 06:59:57.179][INF][AWS_]: otaPal_GetPlatformImageState
+[19/07/24 06:59:57.183][INF][esp_]: aws_esp_ota_get_boot_flags: 1
+[19/07/24 06:59:57.191][INF][esp_]: [0] aflags/seq:0x2/0x1, pflags/seq:0xffffffff/0x0
+[19/07/24 06:59:57.197][INF][AWS_]: Current State=[RequestingJob], Event=[Start], New state=[RequestingJob]
+[19/07/24 06:59:58.188][INF][AWS_]: SUBSCRIBE topic $aws/things/VM4P-00006/jobs/notify-next to broker.
+[19/07/24 06:59:58.190][INF][AWS_]: Subscribed to MQTT topic: $aws/things/VM4P-00006/jobs/notify-next
+[19/07/24 06:59:58.805][WRN][core]: PINGRESP should not be handled by the application callback when using MQTT_ProcessLoop.
+[19/07/24 06:59:58.806][INF][AWS_]: Sent PUBLISH packet to broker $aws/things/VM4P-00006/jobs/$next/get to broker.
+[19/07/24 06:59:58.816][WRN][AWS_]: OTA Timer handle NULL for Timerid=0, can't stop.
+[19/07/24 06:59:58.823][INF][AWS_]: Current State=[WaitingForJob], Event=[RequestJobDocument], New state=[WaitingForJob]
+[19/07/24 06:59:59.220][INF][AWS_]: No active job available in received job document: OtaJobParseErr_t=OtaJobParseErrNoActiveJobs
+[19/07/24 06:59:59.222][INF][AWS_]: otaPal_GetPlatformImageState
+[19/07/24 06:59:59.227][INF][esp_]: aws_esp_ota_get_boot_flags: 1
+[19/07/24 06:59:59.234][INF][esp_]: [0] aflags/seq:0x2/0x1, pflags/seq:0xffffffff/0x0
+[19/07/24 06:59:59.241][INF][AWS_]: Current State=[WaitingForJob], Event=[ReceivedJobDocument], New state=[CreatingFile]
+[19/07/24 06:59:59.251][INF][AWS_]: OTA Agent is shutting down.
+[19/07/24 06:59:59.257][WRN][AWS_]: OTA Timer handle NULL for Timerid=0, can't stop.
+[19/07/24 06:59:59.265][WRN][AWS_]: OTA Timer handle NULL for Timerid=0, can't delete.
+[19/07/24 06:59:59.272][WRN][AWS_]: OTA Timer handle NULL for Timerid=1, can't stop.
+[19/07/24 06:59:59.279][WRN][AWS_]: OTA Timer handle NULL for Timerid=1, can't delete.
+[19/07/24 07:00:00.224][INF][AWS_]: UNSUBSCRIBE topic $aws/things/VM4P-00006/jobs/notify-next to broker.
+[19/07/24 07:00:00.226][INF][AWS_]: Unsubscribed to MQTT topic: $aws/things/VM4P-00006/jobs/notify-next
+[19/07/24 07:00:00.233][INF][AWS_]: Current State=[Stopped], Event=[Shutdown], New state=[Stopped]
+[19/07/24 07:00:00.241][INF][AWS_]: OTA Agent stopped.
+[19/07/24 07:00:01.219][INF][tmr]: end OTA
+[19/07/24 07:00:01.220][INF][tmr]: start CONFIG
+[19/07/24 07:00:01.221][INF][hsm]: t: networkTransfer [(e:EVT_OTA_CHECK_DONE=>)fwDownload -> connected]
+[19/07/24 07:00:04.519][ERR][core]: Handling of keep alive failed. Status=MQTTKeepAliveTimeout
+[19/07/24 07:00:04.520][ERR][core]: Call to receiveSingleIteration failed. Status=MQTTKeepAliveTimeout
+[19/07/24 07:00:04.526][ERR][core]: MQTT_ProcessLoop failed to receive ACK packet: Expected ACK Packet ID=00000006, LoopDuration=1004, Status=MQTTKeepAliveTimeout
+[19/07/24 07:00:04.540][INF][nwTr]: Config fetch status (1)
+[19/07/24 07:00:04.546][INF][tmr]: start INFO
+[19/07/24 07:00:04.635][ERR][dePM]: ReadBatteryParamsfromfs: Failed to open file /data/deviceinfo/batteryinfo
+device info 410, {"wifi":{"rssi":-65,"channel":11,"ssid":"Petasense_Jio","bssid":"c60429e38367"},"startup_test":{"led":1,"accel":0,"magneto":1,"fuel_guage":0,"pdm_mic":0,"ble":1,"status":1995},"device_id":"4000348518677c20","mac":"348518677c20","mcu_sw_version":"1001-R45-338-gcea5","uptime":63,"sequence_no":0,"pending_measurements":1,"config_version":0,"mcu_reboot_reason":"1","free_storage":3039232,"poe":false,"backoff":60}
+[19/07/24 07:00:05.359][INF][tmr]: end INFO
+[19/07/24 07:00:05.380][INF][hsm]: t: networkTransfer [(e:EVT_UPLOAD=>)connected -> readFirstLogChunk]
+[19/07/24 07:00:05.403][INF][tmr]: start UPLOAD_LOGS
+[19/07/24 07:00:05.439][INF][logH]: File to upload: 1721372302
+[19/07/24 07:00:05.502][INF][hsm]: t: logUpload [(e:EVT_LOG_FILE_AVAILABLE=>)readFirstLogChunk -> uploadAndReadLog]
+[19/07/24 07:00:07.611][INF][logH]: Deleting Log File /data/cmprssdlogs/1721372302
+[19/07/24 07:00:07.634][INF][hsm]: t: logUpload [(e:EVT_LOG_PKT_UPLOAD_SUCCESS=>)uploadAndReadLog -> deleteLogFile]
+[19/07/24 07:00:07.653][INF][tmr]: end UPLOAD_LOGS
+[19/07/24 07:00:07.675][INF][hsm]: t: logUpload [(e:EVT_LOG_DELETE_DONE=>)deleteLogFile -> readFirstLogChunk]
+[19/07/24 07:00:07.693][INF][tmr]: start UPLOAD_LOGS
+[19/07/24 07:00:07.728][INF][logH]: File to upload: 35
+[19/07/24 07:00:07.758][INF][hsm]: t: logUpload [(e:EVT_LOG_FILE_AVAILABLE=>)readFirstLogChunk -> uploadAndReadLog]
+[19/07/24 07:00:08.635][INF][logH]: Deleting Log File /data/cmprssdlogs/35
+[19/07/24 07:00:08.664][INF][hsm]: t: logUpload [(e:EVT_LOG_PKT_UPLOAD_SUCCESS=>)uploadAndReadLog -> deleteLogFile]
+[19/07/24 07:00:08.683][INF][tmr]: end UPLOAD_LOGS
+[19/07/24 07:00:08.692][INF][hsm]: t: logUpload [(e:EVT_LOG_DELETE_DONE=>)deleteLogFile -> readFirstLogChunk]
+[19/07/24 07:00:08.719][INF][MeMa]: anyOverallAvailable: found 0 Overall files
+[19/07/24 07:00:08.721][INF][hsm]: t: networkTransfer [(e:EVT_NO_LOG_FILE_AVAILABLE=>)readFirstLogChunk -> readFirstOverallChunk]
+[19/07/24 07:00:08.744][INF][hsm]: t: dataUpload [(e:EVT_NO_DATA_AVAILABLE=>)readFirstOverallChunk -> readFirstOverallChunk]
+[19/07/24 07:00:08.771][INF][tmr]: start UPLOAD_DATA
+[19/07/24 07:00:08.773][INF][hsm]: t: dataUpload [(e:EVT_UPLOAD_MEASUREMENT_DATA=>)readFirstOverallChunk -> readFirstChunk]
+[19/07/24 07:00:08.793][INF][uplH]: Check for files to Upload
+[19/07/24 07:00:08.794][INF][hsm]: t: dataUpload [(e:EVT_READ_MEASUREMENT_DATA=>)readFirstChunk -> readFirstChunk]
+[19/07/24 07:00:08.834][INF][MeMa]: file name /data/measurement/1721372289_1157_1, size 73
+[19/07/24 07:00:08.850][INF][uplH]: Reading from Measurement file...total-size: 1120
+[19/07/24 07:00:08.858][INF][Meas]: loadMeasurementData: Loading 1120 bytes from offset 0 from /data/data/1721372289_1157_1
+[19/07/24 07:00:08.881][INF][Meas]: loadMeasurementData: Actually loaded 1120 bytes from offset 0 from /data/data/1721372289_1157_1
+[19/07/24 07:00:08.884][INF][uplH]: prepareJsonPacketHeader 180 measurementDataType: 10 SensorType: 1
+[19/07/24 07:00:08.892][INF][uplH]: JsonDataHeaderOffset: 238, _jsonDataOffset: 272
+[19/07/24 07:00:08.899][INF][uplH]: bufferSizeForRawData: 130796, encodedDataSizeInPacket: 98094, totalDataLen: 1120, numPackets: 1, DataFilename: /data/data/1721372289_1157_1
+[19/07/24 07:00:08.918][INF][hsm]: t: dataUpload [(e:EVT_DATA_AVAILABLE=>)readFirstChunk -> uploadAndRead]
+[19/07/24 07:00:08.944][INF][hsm]: t: dataUpload [(e:EVT_NO_DATA_AVAILABLE=>)uploadAndRead -> waitForLastFragmentUpload]
+[19/07/24 07:00:09.877][INF][Meas]: deleteMeasurementData: Deleting ChannelData File: /data/data/1721372289_1157_1
+[19/07/24 07:00:09.914][INF][MeMa]: deleteMeasurement: deleting 1721372289_1157_1
+[19/07/24 07:00:09.954][INF][hsm]: t: dataUpload [(e:EVT_UPLOAD_SUCCESS=>)waitForLastFragmentUpload -> deleteFile]
+[19/07/24 07:00:09.973][INF][tmr]: end UPLOAD_DATA
+[19/07/24 07:00:09.974][INF][tmr]: start UPLOAD_DATA
+[19/07/24 07:00:10.746][INF][hsm]: t: dataUpload [(e:EVT_DELETE_SUCCESS=>)deleteFile -> readFirstChunk]
+[19/07/24 07:00:10.763][INF][hsm]: t: dataUpload [(e:EVT_READ_MEASUREMENT_DATA=>)readFirstChunk -> readFirstChunk]
+[19/07/24 07:00:10.783][INF][hsm]: t: networkTransfer [(e:EVT_NO_DATA_AVAILABLE=>)readFirstChunk -> uploadDone]
+[19/07/24 07:00:10.803][INF][tmr]: start WIFI_OFF
+[19/07/24 07:00:10.805][INF][hsm]: t: networkTransfer [(e:EVT_UPLOAD_DONE=>)uploadDone -> cleanup]
+[19/07/24 07:00:10.822][INF][wifH]: Disconnected from AP
+[19/07/24 07:00:10.823][INF][hsm]: t: networkTransfer [(e:EVT_WIFI_DISCONNECTED=>)cleanup -> cleanup]
+[19/07/24 07:00:10.825][INF][wifH]: Disconnected from WiFi
+[19/07/24 07:00:10.843][INF][tmr]: end WIFI_OFF
+[19/07/24 07:00:10.845][INF][hsm]: t: networkTransfer [(e:EVT_WIFI_DISCONNECT_DONE=>)cleanup -> cleanup]
+[19/07/24 07:00:10.864][INF][WQMa]: Next Due time -1721370610 second (Workqueue: 0x3fcb53f0)
+[19/07/24 07:00:10.865][INF][hsm]: t: top [(e:EVT_EXIT_NW_TRANSFER=>)cleanup -> processWork]
+[19/07/24 07:00:11.085][INF][hsm]: t: top [(e:EVT_SCHEDULE_WORK=>)processWork -> processWork]
+[19/07/24 07:00:11.374][INF][log]: createCompressedLogFile: Output Compressed Logs file name: /data/cmprssdlogs/1721372411, current time 1721372411
+[19/07/24 07:00:11.606][INF][comp]: compressionHelper: 9419 bytes of input compressed to 4455 bytes
+[19/07/24 07:00:11.634][INF][tmr]: start WIFI_ON
+[19/07/24 07:00:11.635][INF][nwTr]: Starting Wifi Connect
+[19/07/24 07:00:11.637][INF][hsm]: t: top [(e:EVT_ENTER_NWTRANSFER=>)processWork -> connecting]
+[19/07/24 07:00:11.661][ERR][hsmS]: Unhandled Event: EVT_NOTHING_DUE
+[19/07/24 07:00:11.666][INF][hsm]: t: networkTransfer [(e:EVT_NOTHING_DUE=>)connecting -> connecting]
+[19/07/24 07:00:11.691][INF][wifH]: Initialized WiFI
+[19/07/24 07:00:11.751][INF][wifH]: Connected to AP
+[19/07/24 07:00:12.750][INF][esp_]: sta ip: 192.168.69.212, mask: 255.255.255.0, gw: 192.168.69.2
+[19/07/24 07:00:12.752][INF][wifH]: connected to AP
+[19/07/24 07:00:12.753][INF][tmr]: end WIFI_ON
+[19/07/24 07:00:12.757][INF][tmr]: start TIME_SYNC
+[19/07/24 07:00:12.762][INF][nwTr]: Starting Time Sync
+[19/07/24 07:00:12.767][INF][hsm]: t: networkTransfer [(e:EVT_WIFI_CONNECTED=>)connecting -> syncTime]
+[19/07/24 07:00:18.375][INF][nwTr]: Updated current TS: 1721372418
+[19/07/24 07:00:18.377][INF][tmr]: end TIME_SYNC
+[19/07/24 07:00:18.378][INF][tmr]: start AWS_CONNECT
+[19/07/24 07:00:18.380][INF][nwTr]: Starting AWS
+[19/07/24 07:00:18.385][INF][hsm]: t: networkTransfer [(e:EVT_TIME_SYNCED=>)syncTime -> startAWS]
+[19/07/24 07:00:22.365][WRN][esp-]: Failed to open new connection in specified timeout
+[19/07/24 07:00:22.372][WRN][core]: Connection to the broker failed. Retrying connection after 84 ms backoff.
+[19/07/24 07:00:26.505][WRN][esp-]: Failed to open new connection in specified timeout
+[19/07/24 07:00:26.512][WRN][core]: Connection to the broker failed. Retrying connection after 320 ms backoff.
+[19/07/24 07:00:30.375][WRN][esp-]: Failed to open new connection in specified timeout
+[19/07/24 07:00:30.381][WRN][core]: Connection to the broker failed. Retrying connection after 761 ms backoff.
+[19/07/24 07:00:36.199][INF][tmr]: end AWS_CONNECT
+[19/07/24 07:00:36.200][INF][tmr]: start OTA
+[19/07/24 07:00:36.201][INF][hsm]: t: networkTransfer [(e:EVT_AWS_CONNECT_DONE=>)startAWS -> fwDownload]
+[19/07/24 07:00:36.208][INF][AWS_]: otaPal_GetPlatformImageState
+[19/07/24 07:00:36.212][INF][esp_]: aws_esp_ota_get_boot_flags: 1
+[19/07/24 07:00:36.219][INF][esp_]: [0] aflags/seq:0x2/0x1, pflags/seq:0xffffffff/0x0
+[19/07/24 07:00:36.226][INF][AWS_]: Current State=[RequestingJob], Event=[Start], New state=[RequestingJob]
+[19/07/24 07:00:37.213][INF][AWS_]: SUBSCRIBE topic $aws/things/VM4P-00006/jobs/notify-next to broker.
+[19/07/24 07:00:37.215][ERR][core]: Failed to register callback: Record for topic filter already exists: TopicFilter=$aws/things/+/jobs/#
+[19/07/24 07:00:37.224][WRN][AWS_]: Failed to register a callback to subscription manager with error = 3.
+[19/07/24 07:00:37.234][INF][AWS_]: Subscribed to MQTT topic: $aws/things/VM4P-00006/jobs/notify-next
+[19/07/24 07:00:38.448][INF][AWS_]: Sent PUBLISH packet to broker $aws/things/VM4P-00006/jobs/$next/get to broker.
+[19/07/24 07:00:38.450][WRN][AWS_]: OTA Timer handle NULL for Timerid=0, can't stop.
+[19/07/24 07:00:38.456][INF][AWS_]: Current State=[WaitingForJob], Event=[RequestJobDocument], New state=[WaitingForJob]
+[19/07/24 07:00:39.067][INF][AWS_]: No active job available in received job document: OtaJobParseErr_t=OtaJobParseErrNoActiveJobs
+[19/07/24 07:00:39.069][INF][AWS_]: otaPal_GetPlatformImageState
+[19/07/24 07:00:39.074][INF][esp_]: aws_esp_ota_get_boot_flags: 1
+[19/07/24 07:00:39.081][INF][esp_]: [0] aflags/seq:0x2/0x1, pflags/seq:0xffffffff/0x0
+[19/07/24 07:00:39.088][INF][AWS_]: Current State=[WaitingForJob], Event=[ReceivedJobDocument], New state=[CreatingFile]
+[19/07/24 07:00:39.098][INF][AWS_]: OTA Agent is shutting down.
+[19/07/24 07:00:39.104][WRN][AWS_]: OTA Timer handle NULL for Timerid=0, can't stop.
+[19/07/24 07:00:39.111][WRN][AWS_]: OTA Timer handle NULL for Timerid=0, can't delete.
+[19/07/24 07:00:39.119][WRN][AWS_]: OTA Timer handle NULL for Timerid=1, can't stop.
+[19/07/24 07:00:39.126][WRN][AWS_]: OTA Timer handle NULL for Timerid=1, can't delete.
+[19/07/24 07:00:40.072][INF][AWS_]: UNSUBSCRIBE topic $aws/things/VM4P-00006/jobs/notify-next to broker.
+[19/07/24 07:00:40.074][INF][AWS_]: Unsubscribed to MQTT topic: $aws/things/VM4P-00006/jobs/notify-next
+[19/07/24 07:00:40.081][INF][AWS_]: Current State=[Stopped], Event=[Shutdown], New state=[Stopped]
+[19/07/24 07:00:40.089][INF][AWS_]: OTA Agent stopped.
+[19/07/24 07:00:40.701][INF][tmr]: end OTA
+[19/07/24 07:00:40.703][INF][tmr]: start CONFIG
+[19/07/24 07:00:40.704][INF][hsm]: t: networkTransfer [(e:EVT_OTA_CHECK_DONE=>)fwDownload -> connected]
+[19/07/24 07:00:44.204][INF][nwTr]: Config fetch status (0)
+[19/07/24 07:00:44.210][INF][JsCP]: Parsing V2 config schema
+[19/07/24 07:00:44.211][INF][nwTr]: Received Config: {"1":"1","environment":"dev","serial_number":"VM4P-00006","reporting_interval":300,"device_id":504,"device_state":"Connected","p2p_sync":{"enabled":false},"firmware_manifest":{},"state_based_measurement":false,"schema_version":"V2","connection_settings":{"max_retries":0,"timeout":40,"retry_time_factor":60},"channels":[{"channel_id":1157,"enabled":true,"measurement_settings":[["3","1"]],"sensor_id":136,"type":"magnetometer"},{"channel_id":1156,"enabled":true,"measurement_settings":[["4","1"],["5","1"],["6","2"]],"sensor_id":137,"type":"vibration"},{"channel_id":1158,"enabled":true,"measurement_settings":[["2","1"],["1","1"]],"sensor_id":356,"type":"temperature"}],"config_fetched_at":1719989517,"device_created_at":1713162692,"version":204346,"reporting_settings":{"interval":60,"reporting_mode":1,"start_time":"0-12:05"},"sampling_configs":{"1":{"type":"0","sampling_rate":1,"sampling_size":1,"data_type":"m"},"2":{"type":"1","sampling_rate":1,"sampling_size":1,"data_type":"m"},"3":{"type":"1","sampling_rate":560,"sampling_size":560,"filter_frequency":280,"fs_range":8,"data_type":"z"},"4":{"type":"1","sampling_rate":13334,"sampling_size":13334,"filter_frequency":5500,"fs_range":8,"data_type":"xyz"},"5":{"type":"2","sampling_rate":3333,"sampling_size":13334,"filter_frequency":800,"fs_range":8,"data_type":"xyz"},"6":{"type":"0","sampling_rate":26667,"sampling_size":26667,"fs_range":8,"data_type":"xyz"}},"schedules":{"1":{"type":"0","schedule":{"start_time":"0-12:00","interval":60,"end_time":"0-11:55"}},"2":{"type":"0","schedule":{"start_time":"0-12:00","interval":60,"end_time":"0-09:00"}}}}
+[19/07/24 07:00:44.350][INF][Devi]: Cleaning up all works and workqueues from heap
+[19/07/24 07:00:44.358][INF][CnWQ]: Processing ConnectionWQ Initial startTS 1720958700 current:1721372444
+[19/07/24 07:00:44.368][INF][JsCP]: Device is pointing to dev
+[19/07/24 07:00:44.372][INF][JsCP]: Creating channel-ID: 1157
+[19/07/24 07:00:44.378][INF][JsCP]: Processing Schedule-tag: 1 Sampling-tag: 3, Sampling-rate and size: 560 560
+[19/07/24 07:00:44.388][INF][JsCP]: Data-type: 10 Measurement-type: 1 schedule-type: 0
+[19/07/24 07:00:44.395][INF][JsCP]: ScheduleWorkqueue Args: 0-12:00 0-11:55 60
+[19/07/24 07:00:44.402][INF][JsCP]: Sensor list with id: 136 is empty
+[19/07/24 07:00:44.408][INF][JsCP]: Creating the WorkQueue 0x3fcd7d18
+[19/07/24 07:00:44.414][INF][JsCP]: Queueing Meas Work( 0x3fcd8024 ) on ScheduledWorkqueue (0x3fcd7d18)
+[19/07/24 07:00:44.423][INF][ScWQ]: Processing ScheduledWQ Initial startTS 1720958400 endTS: 1720958100 current:1721372444
+[19/07/24 07:00:44.437][INF][JsCP]: Creating channel-ID: 1156
+[19/07/24 07:00:44.440][INF][JsCP]: Processing Schedule-tag: 1 Sampling-tag: 4, Sampling-rate and size: 13334 13334
+[19/07/24 07:00:44.450][INF][JsCP]: Data-type: 3 Measurement-type: 1 schedule-type: 0
+[19/07/24 07:00:44.457][INF][JsCP]: ScheduleWorkqueue Args: 0-12:00 0-11:55 60
+[19/07/24 07:00:44.464][INF][JsCP]: Sensor list with id: 137 is empty
+[19/07/24 07:00:44.470][INF][JsCP]: Queueing Meas Work( 0x3fcd8318 ) on ScheduledWorkqueue (0x3fcd7d18)
+[19/07/24 07:00:44.479][INF][ScWQ]: Processing ScheduledWQ Initial startTS 1720958400 endTS: 1720958100 current:1721372444
+[19/07/24 07:00:44.492][INF][JsCP]: Processing Schedule-tag: 1 Sampling-tag: 5, Sampling-rate and size: 3333 13334
+[19/07/24 07:00:44.500][INF][JsCP]: Data-type: 3 Measurement-type: 2 schedule-type: 0
+[19/07/24 07:00:44.508][INF][JsCP]: ScheduleWorkqueue Args: 0-12:00 0-11:55 60
+[19/07/24 07:00:44.515][INF][JsCP]: Queueing Meas Work( 0x3fcd83e0 ) on ScheduledWorkqueue (0x3fcd7d18)
+[19/07/24 07:00:44.524][INF][ScWQ]: Processing ScheduledWQ Initial startTS 1720958400 endTS: 1720958100 current:1721372444
+[19/07/24 07:00:44.537][INF][JsCP]: Processing Schedule-tag: 2 Sampling-tag: 6, Sampling-rate and size: 26667 26667
+[19/07/24 07:00:44.545][INF][JsCP]: Failed to read filter_frequency
+[19/07/24 07:00:44.550][INF][JsCP]: Data-type: 3 Measurement-type: 0 schedule-type: 0
+[19/07/24 07:00:44.558][INF][JsCP]: ScheduleWorkqueue Args: 0-12:00 0-09:00 60
+[19/07/24 07:00:44.566][INF][JsCP]: Creating the WorkQueue 0x3fcd8498
+[19/07/24 07:00:44.572][INF][JsCP]: Queueing Meas Work( 0x3fcd8770 ) on ScheduledWorkqueue (0x3fcd8498)
+[19/07/24 07:00:44.581][INF][ScWQ]: Processing ScheduledWQ Initial startTS 1720958400 endTS: 1720947600 current:1721372444
+[19/07/24 07:00:44.594][INF][JsCP]: Creating channel-ID: 1158
+[19/07/24 07:00:44.597][INF][JsCP]: Processing Schedule-tag: 1 Sampling-tag: 2, Sampling-rate and size: 1 1
+[19/07/24 07:00:44.606][INF][JsCP]: Failed to read filter_frequency
+[19/07/24 07:00:44.612][INF][JsCP]: Failed to read fs_range
+[19/07/24 07:00:44.617][INF][JsCP]: Data-type: 12 Measurement-type: 1 schedule-type: 0
+[19/07/24 07:00:44.625][INF][JsCP]: ScheduleWorkqueue Args: 0-12:00 0-11:55 60
+[19/07/24 07:00:44.632][INF][JsCP]: Sensor list with id: 356 is empty
+[19/07/24 07:00:44.638][INF][JsCP]: Queueing Meas Work( 0x3fcd8a1c ) on ScheduledWorkqueue (0x3fcd7d18)
+[19/07/24 07:00:44.647][INF][ScWQ]: Processing ScheduledWQ Initial startTS 1720958400 endTS: 1720958100 current:1721372444
+[19/07/24 07:00:44.660][INF][JsCP]: Processing Schedule-tag: 1 Sampling-tag: 1, Sampling-rate and size: 1 1
+[19/07/24 07:00:44.668][INF][JsCP]: Failed to read filter_frequency
+[19/07/24 07:00:44.673][INF][JsCP]: Failed to read fs_range
+[19/07/24 07:00:44.678][INF][JsCP]: Data-type: 12 Measurement-type: 0 schedule-type: 0
+[19/07/24 07:00:44.686][INF][JsCP]: ScheduleWorkqueue Args: 0-12:00 0-11:55 60
+[19/07/24 07:00:44.694][INF][JsCP]: Got Common Work/WorkQueue tuple[w: 0x3fcd8a1c wq: 0x3fcd7d18] for sensor-id:356 
+[19/07/24 07:00:44.704][INF][JsCP]: Appending the Channel-Arguments to existing Work entry
+[19/07/24 07:00:44.814][INF][tmr]: end CONFIG
+[19/07/24 07:00:44.815][INF][tmr]: start INFO
+[19/07/24 07:00:44.900][ERR][dePM]: ReadBatteryParamsfromfs: Failed to open file /data/deviceinfo/batteryinfo
+device info 320, {"wifi":{"rssi":-57,"channel":11,"ssid":"Petasense_Jio","bssid":"c60429e38367"},"device_id":"4000348518677c20","mac":"348518677c20","mcu_sw_version":"1001-R45-338-gcea5","uptime":104,"sequence_no":1,"pending_measurements":0,"config_version":204346,"mcu_reboot_reason":"1","free_storage":3051520,"poe":false,"backoff":60}
+[19/07/24 07:00:46.026][INF][tmr]: end INFO
+[19/07/24 07:00:46.741][INF][hsm]: t: networkTransfer [(e:EVT_UPLOAD=>)connected -> readFirstLogChunk]
+[19/07/24 07:00:46.760][INF][tmr]: start UPLOAD_LOGS
+[19/07/24 07:00:46.794][INF][logH]: File to upload: 1721372411
+[19/07/24 07:00:46.829][INF][hsm]: t: logUpload [(e:EVT_LOG_FILE_AVAILABLE=>)readFirstLogChunk -> uploadAndReadLog]
+[19/07/24 07:00:48.075][INF][logH]: Deleting Log File /data/cmprssdlogs/1721372411
+[19/07/24 07:00:48.101][INF][hsm]: t: logUpload [(e:EVT_LOG_PKT_UPLOAD_SUCCESS=>)uploadAndReadLog -> deleteLogFile]
+[19/07/24 07:00:48.120][INF][tmr]: end UPLOAD_LOGS
+[19/07/24 07:00:48.128][INF][hsm]: t: logUpload [(e:EVT_LOG_DELETE_DONE=>)deleteLogFile -> readFirstLogChunk]
+[19/07/24 07:00:48.156][INF][MeMa]: anyOverallAvailable: found 0 Overall files
+[19/07/24 07:00:48.157][INF][hsm]: t: networkTransfer [(e:EVT_NO_LOG_FILE_AVAILABLE=>)readFirstLogChunk -> readFirstOverallChunk]
+[19/07/24 07:00:48.180][INF][hsm]: t: dataUpload [(e:EVT_NO_DATA_AVAILABLE=>)readFirstOverallChunk -> readFirstOverallChunk]
+[19/07/24 07:00:48.207][INF][tmr]: start UPLOAD_DATA
+[19/07/24 07:00:48.208][INF][hsm]: t: dataUpload [(e:EVT_UPLOAD_MEASUREMENT_DATA=>)readFirstOverallChunk -> readFirstChunk]
+[19/07/24 07:00:48.230][INF][hsm]: t: dataUpload [(e:EVT_READ_MEASUREMENT_DATA=>)readFirstChunk -> readFirstChunk]
+[19/07/24 07:00:48.250][INF][hsm]: t: networkTransfer [(e:EVT_NO_DATA_AVAILABLE=>)readFirstChunk -> uploadDone]
+[19/07/24 07:00:48.270][INF][tmr]: start WIFI_OFF
+[19/07/24 07:00:48.272][INF][hsm]: t: networkTransfer [(e:EVT_UPLOAD_DONE=>)uploadDone -> cleanup]
+[19/07/24 07:00:48.289][INF][wifH]: Disconnected from AP
+[19/07/24 07:00:48.290][INF][hsm]: t: networkTransfer [(e:EVT_WIFI_DISCONNECTED=>)cleanup -> cleanup]
+[19/07/24 07:00:48.293][INF][wifH]: Disconnected from WiFi
+[19/07/24 07:00:48.316][INF][tmr]: end WIFI_OFF
+[19/07/24 07:00:48.318][INF][hsm]: t: networkTransfer [(e:EVT_WIFI_DISCONNECT_DONE=>)cleanup -> cleanup]
+[19/07/24 07:00:48.340][INF][WQMa]: Next Due time 12 second (Workqueue: 0x3fcd8498)
+[19/07/24 07:00:48.342][INF][WQMa]: Next Due time 12 second (Workqueue: 0x3fcd7d18)
+[19/07/24 07:00:48.345][INF][WQMa]: Next Due time 12 second (Workqueue: 0x3fcb53f0)
+[19/07/24 07:00:48.353][INF][hsm]: t: top [(e:EVT_EXIT_NW_TRANSFER=>)cleanup -> processWork]
+[19/07/24 07:00:48.380][INF][WQMa]: Next Due time 12 second (Workqueue: 0x3fcd8498)
+[19/07/24 07:00:48.381][INF][WQMa]: Next Due time 12 second (Workqueue: 0x3fcd7d18)
+[19/07/24 07:00:48.385][INF][WQMa]: Next Due time 12 second (Workqueue: 0x3fcb53f0)
+[19/07/24 07:00:48.392][INF][idle]: checkBTHndlr: Entry conditions: ble device present, timeToSleep 12, ble status BLE__POWERED_OFF
+[19/07/24 07:00:48.404][INF][hsm]: t: top [(e:EVT_NOTHING_DUE=>)processWork -> checkBT]
+[19/07/24 07:00:48.431][INF][pwr]: power_on(POWER_BLE)
+[19/07/24 07:00:48.432][INF][uart]: queue free spaces: 20
+[19/07/24 07:00:48.435][INF][hsm]: t: idle [(e:EVT_BT_ENABLE=>)checkBT -> enableBT]
+[19/07/24 07:00:48.490][INF][ble]: Garbage data from BLE
+[19/07/24 07:00:49.120][INF][idle]: Triggered BT Intr
+[19/07/24 07:00:49.121][INF][ble]: Uart is already Open
+[19/07/24 07:00:49.122][INF][ble]: BL654 IRQ, send start link
+[19/07/24 07:00:49.126][INF][hsm]: t: top [(e:EVT_BT_INTR=>)enableBT -> bt]
+[19/07/24 07:00:49.180][INF][ble]: BLE advertisement has started
+[19/07/24 07:00:49.181][INF][hsm]: t: top [(e:EVT_BT_ADVERTISING_STARTED=>)bt -> bt]
+[19/07/24 07:00:50.680][INF][ble]: End link received, Rx link inactive
+[19/07/24 07:00:50.683][INF][WQMa]: Next Due time 10 second (Workqueue: 0x3fcd8498)
+[19/07/24 07:00:50.684][INF][WQMa]: Next Due time 10 second (Workqueue: 0x3fcd7d18)
+[19/07/24 07:00:50.691][INF][WQMa]: Next Due time 10 second (Workqueue: 0x3fcb53f0)
+[19/07/24 07:01:00.700][INF][hsm]: t: top [(e:EVT_BT_DONE=>)bt -> processWork]
+[19/07/24 07:01:00.720][INF][tmr]: start MEASURE
+[19/07/24 07:01:00.721][INF][pwr]: power_off(POWER_BLE)
+[19/07/24 07:01:00.724][INF][meaW]: MeasurementWorkArgs Sensor-ID: 137 Num-of-Channels: 1
+[19/07/24 07:01:00.727][INF][meaW]: Channel-Id: 1156 @Idx: 1 Data-type: 3 Measurement-Type: 0 Sampling{size: 26667 Rate: 26667} Channel-Sensor-Type:0
+[19/07/24 07:01:00.740][INF][pwr]: power_on(POWER_SEN)
+[19/07/24 07:01:00.745][INF][MeMa]: Using filename :  /data/overall/0_0_3_1156 to store Measurement data
+[19/07/24 07:01:00.820][INF][iis3]: Filter-Coefficients(fMax: 0 fmin: 4 type: 2) Order: 33 [-0.000078 -0.000087 -0.000112 -0.000154 -0.000210...]
+[19/07/24 07:01:00.826][INF][iis3]: Actual Sampling-Rate :26707 Downsample-factor: 1 Ratio: 1.000000
+[19/07/24 07:01:00.834][INF][Acel]: Sampling Rated adjusted to: 26707
+[19/07/24 07:01:00.838][INF][Acel]: Waiting for Callback to hit
+[19/07/24 07:01:05.825][ERR][iis3]: Failed to read data from IIS3DWB, semaphore timed out
+[19/07/24 07:01:05.845][WRN][Acel]: Failed to fetch samples(Requested: 26667 Collected: 0)
+[19/07/24 07:01:05.846][INF][Acel]: Sampling Rated adjusted to: 26707
+[19/07/24 07:01:05.849][ERR][Acel]: Failed to get 26667 samples - got 0 samples instead.
+[19/07/24 07:01:05.859][INF][Acel]: wait_for_callback wait-returned: 1
+[19/07/24 07:01:05.863][INF][pwr]: power_off(POWER_SEN)
+[19/07/24 07:01:05.868][INF][tmr]: end MEASURE
+[19/07/24 07:01:05.872][INF][tmr]: start MEASURE
+[19/07/24 07:01:05.877][INF][meaW]: MeasurementWorkArgs Sensor-ID: 136 Num-of-Channels: 1
+[19/07/24 07:01:05.884][INF][meaW]: Channel-Id: 1157 @Idx: 0 Data-type: 10 Measurement-Type: 1 Sampling{size: 560 Rate: 560} Channel-Sensor-Type:1
+[19/07/24 07:01:05.897][INF][pwr]: power_on(POWER_SEN)
+[19/07/24 07:01:05.903][INF][MeMa]: Using filename :  /data/data/1721372465_1157_1 to store Measurement data
+[19/07/24 07:01:05.912][INF][Magn]: Using Magnetometer Sampling Rate: 560.000000, required : 560.000000
+[19/07/24 07:01:05.922][INF][Magn]: Enabling Magnetometer with Rate(enum): 17 Range: 8
+[19/07/24 07:01:07.396][INF][Magn]: Took time 965(millis) Expected-Time: 1000(millis) Actual ODR: 580 SampleSize:560
+[19/07/24 07:01:07.581][INF][Meas]: saveMeasurementData: 1120/1120 bytes saved in /data/data/1721372465_1157_1
+[19/07/24 07:01:07.583][INF][Magn]: Waiting for Callback to hit
+[19/07/24 07:01:07.586][INF][Magn]: wait_for_callback wait-returned: 1
+[19/07/24 07:01:07.630][INF][MeMa]: Using filename 1721372465_1157_1 for Measurement-header Metadata
+[19/07/24 07:01:07.633][INF][pwr]: power_off(POWER_SEN)
+[19/07/24 07:01:07.635][INF][tmr]: end MEASURE
+[19/07/24 07:01:07.638][INF][tmr]: start MEASURE
+[19/07/24 07:01:07.643][INF][meaW]: MeasurementWorkArgs Sensor-ID: 137 Num-of-Channels: 1
+[19/07/24 07:01:07.651][INF][meaW]: Channel-Id: 1156 @Idx: 1 Data-type: 3 Measurement-Type: 1 Sampling{size: 13334 Rate: 13334} Channel-Sensor-Type:0
+[19/07/24 07:01:07.664][INF][pwr]: power_on(POWER_SEN)
+[19/07/24 07:01:07.669][INF][MeMa]: Using filename :  /data/data/1721372467_1156_1 to store Measurement data
+[19/07/24 07:01:07.741][INF][iis3]: Actual Sampling-Rate :26707 Downsample-factor: 2 Ratio: 1.999925
+[19/07/24 07:01:07.745][INF][Acel]: Sampling Rated adjusted to: 13353
+[19/07/24 07:01:07.747][INF][Acel]: Waiting for Callback to hit
